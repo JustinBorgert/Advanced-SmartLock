@@ -1,0 +1,26 @@
+Zunächst wurden alle komponenten, einzelnd, mit hilfe von denn Examples auf funktionalität getestet (voerst nur Servo, UltraSonic Sensor, RFID, Buzzer)
+
+Werte wurden zusätzlich im Serial Monitor ausgegeben, welche wir dann später wiederverwenden im richtigen code.
+
+Im anschluss kam mir die Idee auf ein Digitales Namenschild dazu zu bauen, wie ich aber dann im nachhinein festellen durfte gab es dafür zu wenig Pins, jedoch habe ich dann rechachiert und rausgefunden, dass ich einfach ein I2C-Display nehmen kann um "nur" zwei Analoge Pins zu verbrauchen. 
+
+Dann ging die Bestellung raus und ich musste warten. In der zwischnzeit habe ich dann schonmal alles soweit fertig gecoded wie ich konnte und getestet. Bin soweit auch auf keine Probleme gestoßen.
+
+Es wurden der Code gelöscht, welcher alle daten in denn Serial Monitor gegeben hat.
+
+Das I2C Display ist angekommen und konnte getestet werden. Vorerst kammen probleme auf, welche durch das example gelöst wurde, wo man raus lesen kann wie das LCD eingestellt werden muss.
+
+Im Anschluss gab es dann ein paar probleme mit delay, welche ich aber umschrieben bekommen habe tatsächlich.
+
+Dann wurde festgestellt das, dass LCD dauerhaft an ist und wir nicht vernünftig an und ausschalten können und das Strom ineffizient wäre, worauf ich denn Motion sensor eingebaut habe und das Display anschalte entweder wenn eine Karte gelesen wird oder wenn sich etwas bewegt.
+
+Im Anschluss wurde alles verbaut in einem abgelaufenen Erste-Hilfe Kasten. Wir hatten diesen Über und bietet eine einfache möglichkeit alles zu verbauen, zu verstecken und natürlich denn Faktor Tür zu presentieren. Diese wurde dann bearbeitet und alles wurde angebracht inklusive Serve mit einem Draht und Schieberegler.
+
+Beim testen ist rausgekommen, dass erstmal das LCD beim Willkommen Schild nicht richtig leuchtet: Lösung war das eine {} falsch gesetzt wurde.
+
+Weiter ging der Servo nicht, ich hatte alles ausgetestet bis ich zum schluss die Kabel gecheckt habe und festellen dürfen, dass der PIN denn wir denn Servo zu geschrieben haben, der Falsche war und wir dementsprechen natürlich diesen nicht ansteuern konnten. Dadurch hat sich am ende das Projekt nochmal überarbeitet was die Winkel angeht.
+
+Das Projekt wurde fertiggestellt und ging in Produktion der Videos.
+
+Das Projekt könnte man direkt in einer Türangel einbauen oder hinter der Wand vor der Tür, dort sind keine Grenzen gesetzt. Es ist ein kleines, umfangreiches aber sehr interessantes Projekt gewesen, welches denn Arduino ausreizt.
+
